@@ -222,7 +222,7 @@ naqeb.on("message", async message => {
       .setTitle(
         "**__کلیک لێرە بکە بۆ ئەوەی بۆت ئەکە ئینڤاتی سێرڤەری خۆت بکەی💖__**"
       )
-      .setURL(``);//linke botaka lera dane
+      .setURL(`https://discord.com/api/oauth2/authorize?client_id=721297403046527007&permissions=8&scope=bot`);//linke botaka lera dane
     message.channel.sendEmbed(invite);
   }
 });
@@ -268,4 +268,4 @@ naqeb.on("message", message => {
   }
 });
 
-naqeb.login("");
+naqeb.login("NzIxMjk3NDAzMDQ2NTI3MDA3.XuSejQ.F7XtYUBZTmKmX9QKEm4OhVR6ceg");

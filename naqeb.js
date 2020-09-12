@@ -4,7 +4,7 @@ const invites = {};
 const wait = require("util").promisify(setTimeout);
 const moment = require("moment");
 const fs = require("fs");
-var prefix = "N/";
+var prefix = "X/";
 
 naqeb.on("ready", () => {
   console.log(`Logged in as ${naqeb.user.tag}!`);
@@ -23,8 +23,8 @@ naqeb.on("ready", () => {
   console.log("");
   console.log("information:");
   console.log("");
-  console.log(`servers! [ " ${naqeb.guilds.size} " ]`);
-  console.log(`Users! [ " ${naqeb.users.size} " ]`);
+  console.log(`servers! [ " ${XALO.guilds.size} " ]`);
+  console.log(`Users! [ " ${XALO.users.size} " ]`);
   console.log(`channels! [ " ${naqeb.channels.size} " ]`);
   console.log("╚[════════════════════════════════════]╝");
   console.log("");
@@ -37,7 +37,7 @@ naqeb.on("ready", () => {
 
 naqeb.on("guildMemberAdd", member => {
   let welcomer = member.guild.channels.find(
-    channel => channel.name === "welcome" /// naqeb | hama
+    channel => channel.name === "welcome" /// XALO | TOOT
   );
   if (!welcomer) return;
   if (welcomer) {
@@ -182,8 +182,8 @@ naqeb.on("message", async message => {
 });
 
 naqeb.on("ready", () => {
-  naqeb.user.setActivity("N/help ", { type: "Playing" });
-  naqeb.user.setStatus("idle");
+  XALO.user.setActivity("X/help ", { type: "Playing" });
+  XALO.user.setStatus("idle");
 });
 naqeb.on("message", message => {
   if (message.author.bot) return;
@@ -195,21 +195,21 @@ naqeb.on("message", message => {
 
 ┏◣craete channel left ◢┓
 
-┏◣ N/lock◢┓
+┏◣ X/lock◢┓
 
-┏◣ N/unlock◢┓
+┏◣ X/unlock◢┓
 
-┏◣N/user◢┓
+┏◣X/user◢┓
  
-┏◣N/unbansall ◢┓
+┏◣X/unbansall ◢┓
 
-┏◣ N/muvall  ◢┓
+┏◣ X/muvall  ◢┓
 
-┏◣ N/profile  ◢┓
-                               
- ┏◣N/invitebot◢┓
+┏◣ X/profile  ◢┓
+                              
+ ┏◣X/invitebot◢┓
                                       
- ┏◣N/support◢┓ `);
+ ┏◣X/support◢┓ `);
   }
 });
 
@@ -231,7 +231,7 @@ naqeb.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setColor("RANDOM")
-      .addField(" سەپۆرتی سیرڤەر بەکەن", " linke server ");
+      .addField(" سەپۆرتی سیرڤەر بەکەن", https://discord.gg/Jr2eHWC"");
 
     message.channel.sendEmbed(embed);
   }

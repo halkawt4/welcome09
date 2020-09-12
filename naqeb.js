@@ -87,7 +87,7 @@ naqeb.on("guildMemberRemove", member => {
     .addField("لێفتی کرد لە سێرڤەر")
     .addField("رۆشت لە سیرڤەر")
     .addField("ژمارەی مێمبەری سێرڤەر", `${member.guild.memberCount}` + " کەس")
-    .setImage("")//wenay left lera dane naqeb | hama
+    .setImage("")//wenay left lera dane xalo | toot
     .setFooter(`==== **${member.guild.name}====`, "")
     .setTimestamp();
 
@@ -268,4 +268,4 @@ naqeb.on("message", message => {
   }
 });
 
-naqeb.login("NzIxMjk3NDAzMDQ2NTI3MDA3.XuSejQ.F7XtYUBZTmKmX9QKEm4OhVR6ceg");
+naqeb.login("NzA4MDQzNzAwMDU1NDQxNDQ5.XrRnFA.gV5h8l90VEmQycYaeBCrDFjl-z4");

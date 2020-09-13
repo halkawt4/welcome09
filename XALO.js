@@ -231,7 +231,7 @@ naqeb.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setColor("RANDOM")
-      .addField(" سەپۆرتی سیرڤەر بەکەن", https://discord.gg/Jr2eHWC"");
+      .addField("https://discord.gg/3GG7W4p", https://discord.gg/3GG7W4p"");
 
     message.channel.sendEmbed(embed);
   }
